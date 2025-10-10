@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "install": "node scripts/install.js",
+    "install-universal": "node install.js",
     "verify": "node scripts/verify.js",
     "demo": "node scripts/demo.js"
   },
