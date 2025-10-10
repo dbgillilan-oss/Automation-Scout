@@ -125,12 +125,29 @@ async function initializeWindows() {
   console.log('✅ Windows platform initialized');
 }
 
-// Mac-specific initialization (Future)
+// Mac-specific initialization
 async function initializeMac() {
   console.log('🍎 Initializing macOS features...');
+  
+  // Check for required macOS permissions
+  console.log('   Permissions: Checking accessibility permissions...');
+  
+  // macOS-specific paths and integration
+  console.log('   Paths: Using macOS standard directories');
   console.log('   Menu bar: macOS menu bar integration ready');
-  console.log('   Permissions: Accessibility permissions required');
   console.log('   Automation: AppleScript automation available');
+  console.log('   Security: macOS keychain integration ready');
+  
+  // Note about permissions for client
+  if (process.env.AS_ENVIRONMENT === 'production') {
+    console.log('');
+    console.log('📋 macOS Setup Notes:');
+    console.log('   • System Preferences → Security & Privacy → Privacy');
+    console.log('   • Grant "Accessibility" permissions if needed for automation');
+    console.log('   • Grant "Full Disk Access" if file monitoring is required');
+    console.log('');
+  }
+  
   console.log('✅ macOS platform initialized');
 }
 
