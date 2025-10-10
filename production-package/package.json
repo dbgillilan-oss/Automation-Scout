@@ -1,0 +1,27 @@
+{
+  "name": "automation-scout-production",
+  "version": "1.0.0",
+  "description": "Automation Scout - Production Deployment Package",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "install": "node scripts/install.js",
+    "verify": "node scripts/verify.js",
+    "demo": "node scripts/demo.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "automation",
+    "workflow",
+    "privacy",
+    "desktop",
+    "windows"
+  ],
+  "author": "Automation Scout Team",
+  "license": "MIT"
+}
